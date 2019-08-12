@@ -14,15 +14,17 @@ profileFaceCascade = cv2.CascadeClassifier('profileFace.xml')
 # raw image file is saved 'raw' dir and cropped file is saved 'cropped' dir
 # ex) raw image : './Yuri/raw/1.jpg', cropped image : './Yuri/cropped/1.jpg' 
 
-JoYuris =['Yuri', 'Caewon', 'Yaena']
+JoYuris =['Yuri', 'Chaewon', 'Yaena']
 for member in JoYuris:
-    path = './' + member
-    imageList = os.listdir(path+'/raw/')
+    path = './rawImage/' + member + '/'
+    imageList = os.listdir(path)
     print(format(imageList))
     cnt = 0
     for imageName in imageList:
-        print(path+'/raw/'+imageName)
-        image = cv2.imread(path+'/raw/'+imageName)
+        print("path+imageName : ",path+imageName)
+        if imageName.strip().split('.')[-1] != 'jpg':
+            continue
+        image = cv2.imread(path+imageName)
         gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
         frontFaces = frontFaceCascade.detectMultiScale(gray, 1.3, 5)
         profileFaces = profileFaceCascade.detectMultiScale(gray, 1.3, 5)
@@ -32,6 +34,7 @@ for member in JoYuris:
             faces = profileFaces
         else:
             continue
+            
         x, y, w, h = faces[0]
         print(x, y, w, h)
         
@@ -39,7 +42,8 @@ for member in JoYuris:
         tcnt = 0
         crop  = image[y:y+h, x:x+w]
         resized= cv2.resize(crop, (128, 128),interpolation = cv2.INTER_CUBIC)
-        plt.imshow(cv2.cvtColor(resized, cv2.COLOR_BGR2RGB))
-        plt.show()
-        cv2.imwrite(path+'/croped/'+str(cnt)+'-'+str(tcnt)+'.jpg', resized)
+        #plt.imshow(cv2.cvtColor(resized, cv2.COLOR_BGR2RGB))
+        #plt.show()
+        cv2.imwrite('./trainImage/' +member + '/' +str(cnt)+'-'+str(tcnt)+'.jpg', resized)
         
+
