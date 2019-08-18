@@ -7,7 +7,7 @@ It is a program that classifies members of Joyuris using deep learning.
 Joyuris means members of the IZ*ONE who called Jo Yuri.
 If you're wondering what this means, look at the photo below.
 
-<image src="https://raw.githubusercontent.com/inerplat/JoYuris-Classifier/master/0.%20Document/images/JoYuris.jpg" width="50%" height="50%"/>
+<image src="https://raw.githubusercontent.com/inerplat/JoYuris-Classifier/master/0.%20Document/images/JoYuris.jpg" width="75%" height="75%"/>
 
 In the early days of their debut, reporters often misrepresented themselves because they couldn't distinguish them.
 
