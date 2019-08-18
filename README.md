@@ -1,8 +1,22 @@
 # JoYuris-Classifier
-## 조유리즈 판별기
 
-CNN을 이용한 조유리즈 멤버들를 구별하는 딥러닝 프로젝트입니다.
+It is a program that classifies members of Joyuris using deep learning.
 
-제작자가 군인이라 개발속도가 매~우~ 느리며, 언제 사라져도 무방한 프로젝트입니다.
+## 1. What is 'JoYuris'?
 
-지금까지 이런 프로젝트는 없었다. 이것은 코딩인가? 덕질인가?
+Joyuris means members of the IZ*ONE who called Jo Yuri.
+If you're wondering what this means, look at the photo below.
+
+![JoYuris](https://github.com/inerplat/JoYuris-Classifier/tree/master/0. Document/images/JoYuris.jpg)
+
+In the early days of their debut, reporters often misrepresented themselves because they couldn't distinguish them.
+
+The members of Joyuris are composed of Yuri, Chaewon and Yena. At first glance, they are similar, but each has its own characteristics. If you look closely, you can tell the difference
+
+## 2. How does it work?
+
+This program works by using CNN (Convolutional Neural Network), a type of deep learning algorithm.
+
+Before using CNN, it goes through a pre-treatment process to classify members of JoYuris only by their faces, including their hair.
+
+The program uses other completed libraries (or APIs) to cut faces, inflate data through various transformations of images, and then use CNN to learn.
