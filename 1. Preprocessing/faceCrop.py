@@ -6,7 +6,6 @@ import sys
 
 # Notes: 'face.xml' is 'opencv/data/haarcascades/haarcascade_frontalface_default.xml'
 
-cascPath = sys.argv[1]
 frontFaceCascade = cv2.CascadeClassifier('frontFace_default.xml')
 profileFaceCascade = cv2.CascadeClassifier('profileFace.xml')
 
