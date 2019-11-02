@@ -1,10 +1,13 @@
-# JoYuris-Classifier
+# JoYurIZ-Classifier
+> The pace of the project is very slow. Because I only work when I'm free.😢
+
+> Welcome photos of IZ*ONE members to be used as training data. Thank you for sending me the labeled image by [Email](mailto:inerplat@gmail.com)
 
 It is a program that classifies members of Joyuris using deep learning.
 
 ## 1. What is 'JoYuris'?
 
-Joyuris means members of the IZ*ONE who called Jo Yuri.
+Joyuriz means members of the IZ*ONE who called Jo Yuri.
 If you're wondering what this means, look at the photo below.
 
 <image src="https://raw.githubusercontent.com/inerplat/JoYuris-Classifier/master/0.%20Document/images/JoYuris.jpg" width="75%" height="75%"/>
